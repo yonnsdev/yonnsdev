@@ -27,7 +27,7 @@
 ## Languages & Tools
 
 ### Languages
-- [C](#Languages)
+- [C](#)
 - [Python](https://www.python.org/)
 - [Dart](https://dart.dev/)
 
@@ -36,7 +36,7 @@
 - [Flutter](https://flutter.dev/)
 
 ### Studying
-- [C++](#Studying)
+- [C++](#)
 - [Raylib](https://www.raylib.com/)
 
 <!-- [=========================================== Awards ===========================================] -->
