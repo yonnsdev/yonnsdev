@@ -2,7 +2,7 @@
   <h1>YonnsDev</h1>
   
   [![About Me](https://img.shields.io/badge/-ABOUT%20ME-blue?style=for-the-badge)](#About-Me)
-  [![Languages & Tools](https://img.shields.io/badge/-LANGUAGES%20&%20TOOLS-green?style=for-the-badge)](#Languages-&-Tools)
+  [![Languages & Tools](https://img.shields.io/badge/-LANGUAGES%20&%20TOOLS-green?style=for-the-badge)](#Languages--Tools)
   [![Awards](https://img.shields.io/badge/-AWARDS-yellow?style=for-the-badge)](#Awards)
   [![Contacts](https://img.shields.io/badge/-CONTACTS-orange?style=for-the-badge)](#Contacts)
   
@@ -27,7 +27,7 @@
 ## Languages & Tools
 
 ### Languages
-- [C](#Languages-&-Tools)
+- [C](#Languages--Tools)
 - [Python](https://www.python.org/)
 - [Dart](https://dart.dev/)
 
@@ -36,7 +36,7 @@
 - [Flutter](https://flutter.dev/)
 
 ### Studying
-- [C++](#Languages-&-Tools)
+- [C++](#Languages--Tools)
 - [Raylib](https://www.raylib.com/)
 
 <!-- [=========================================== Awards ===========================================] -->
