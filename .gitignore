@@ -46,3 +46,6 @@ _deps
 
 # Build
 [Bb][Uu][Ii][Ll][Dd]
+
+# DS_Store
+.DS_Store
