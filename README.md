@@ -37,7 +37,8 @@
 
 ### Studying
 - [C++](#Languages--Tools)
-- [Raylib](https://www.raylib.com/)
+- [JavaScript](https://www.javascript.com)
+- [Three.js](https://threejs.org)
 
 <!-- [=========================================== Awards ===========================================] -->
 
