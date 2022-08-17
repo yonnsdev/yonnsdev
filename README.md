@@ -31,14 +31,9 @@
 - [Python](https://www.python.org/)
 - [Dart](https://dart.dev/)
 
-### Tools
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Flutter](https://flutter.dev/)
-
 ### Studying
 - [C++](#Languages--Tools)
 - [JavaScript](https://www.javascript.com)
-- [Three.js](https://threejs.org)
 
 <!-- [=========================================== Awards ===========================================] -->
 
