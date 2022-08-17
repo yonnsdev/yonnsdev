@@ -1,0 +1,305 @@
+{
+    // [============] [EDITOR] [============]
+    // Editor
+    "editor.suggestSelection": "first",
+    "editor.inlineSuggest.enabled": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.rulers": [],
+    "editor.fontSize": 13,
+    "editor.fontWeight": "normal",
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 0,
+    "editor.insertSpaces": true,
+    "editor.parameterHints.enabled": true,
+    "editor.accessibilitySupport": "off",
+    "editor.wordWrap": "off",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.guides.bracketPairs": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": true,
+    "editor.guides.indentation": false,
+    "explorer.fileNesting.enabled": false,
+    "editor.inlayHints.padding": true,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "editor.fontFamily": "'Fira Code', 'Jetbrains Mono', Menlo",
+    "diffEditor.wordWrap": "off",
+    "diffEditor.codeLens": true,
+    "screencastMode.verticalOffset": 5,
+    "screencastMode.mouseIndicatorColor": "#FF000000",
+    "screencastMode.fontSize": 24,
+
+    // Terminal
+    "terminal.integrated.fontFamily": "'Fira Code', 'Jetbrains Mono', Menlo",
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.shellIntegration.enabled": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontWeight": "normal",
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.env.osx": {
+        "PATH": "",
+        "FIG_NEW_SESSION": "1"
+    },
+    "terminal.external.osxExec": "iTerm.app",
+
+    // Explorer
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    // Files
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "files.autoSave": "afterDelay",
+
+    // Git
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.mergeEditor": true,
+
+    // Debug
+    "debug.allowBreakpointsEverywhere": true,
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "workbench.productIconTheme": "emoji-product-icons",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+
+    // Security
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // Color
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#1073cf2d",
+        "editor.lineHighlightBorder": "#9fced11f",
+        "editorBracketHighlight.foreground1": "#d76a41",
+        "editorBracketHighlight.foreground2": "#98b52c",
+        "editorBracketHighlight.foreground3": "#ffb56f",
+        "editorBracketHighlight.foreground4": "#d76a41",
+        "editorBracketHighlight.foreground5": "#98b52c",
+        "editorBracketHighlight.foreground6": "#ffb56f",
+
+        // Terminal Gruvbox Theme
+        "terminal.ansiBlack": "#282727",
+        "terminal.ansiBrightBlack": "#928273",
+        "terminal.ansiBrightRed": "#cb231d",
+        "terminal.ansiRed": "#fa4834",
+        "terminal.ansiBrightGreen": "#98961a",
+        "terminal.ansiGreen": "#b8ba26",
+        "terminal.ansiBrightYellow": "#d69821",
+        "terminal.ansiYellow": "#f9bc2f",
+        "terminal.ansiBrightBlue": "#458487",
+        "terminal.ansiBlue": "#83a497",
+        "terminal.ansiBrightMagenta": "#b06185",
+        "terminal.ansiMagenta": "#d2859a",
+        "terminal.ansiBrightCyan": "#689c69",
+        "terminal.ansiCyan": "#8ebf7b",
+        "terminal.ansiBrightWhite": "#a89883",
+        "terminal.ansiWhite": "#ebdab1",
+
+        "[Default Dark+]": {
+            "editorInlayHint.background": "#4d4d4d99",
+            "editorInlayHint.foreground": "#ffffffcc",
+            "editorInlayHint.parameterBackground": "#4d4d4d99",
+            "editorInlayHint.parameterForeground": "#ffffffcc",
+            "editorInlayHint.typeBackground": "#4d4d4d99",
+            "editorInlayHint.typeForeground": "#ffffffcc"
+        },
+        "[Monokai Pro]": {
+            "editorInlayHint.background": "#59575c",
+            "editorInlayHint.foreground": "#e5e5e5",
+            "editorInlayHint.parameterBackground": "#59575c",
+            "editorInlayHint.parameterForeground": "#e5e5e5",
+            "editorInlayHint.typeBackground": "#59575c",
+            "editorInlayHint.typeForeground": "#e5e5e5"
+        },
+        "[Gruvbox Dark Medium]": {
+            "editorInlayHint.background": "#4d4d4d99",
+            "editorInlayHint.foreground": "#e8dcb7cc",
+            "editorInlayHint.parameterBackground": "#4d4d4d99",
+            "editorInlayHint.parameterForeground": "#e8dcb7cc",
+            "editorInlayHint.typeBackground": "#4d4d4d99",
+            "editorInlayHint.typeForeground": "#e8dcb7cc"
+        }
+    },
+
+    // Window
+    "window.commandCenter": true,
+
+    // [Language-Based EDITOR Customization]
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // [============] [ Language-Based EXTENSIONS] [============]
+
+    // [====] [C/C++] [====]
+    // C_Cpp
+    "C_Cpp.default.compilerPath": "/opt/homebrew/Cellar/llvm/14.0.6_1/bin/clang",
+    "C_Cpp.codeAnalysis.clangTidy.path": "/opt/homebrew/Cellar/llvm/14.0.6_1/bin/clang-tidy",
+    "C_Cpp.clang_format_path": "/opt/homebrew/Cellar/llvm/14.0.6_1/bin/clang-format",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": false,
+    "C_Cpp.codeAnalysis.updateDelay": 500,
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.formatting": "Default",
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    "C_Cpp.inlayHints.parameterNames.enabled": true,
+    "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
+    // Cmake
+    "cmake.configureOnOpen": false,
+    // Clang Format Style
+    /* 
+    Chromium Edited v1:
+    { BasedOnStyle: Chromium, IndentWidth: 4, AccessModifierOffset: -2, IndentCaseLabels: false, NamespaceIndentation: All, ObjCBlockIndentWidth: 4, ColumnLimit: 120, AllowShortFunctionsOnASingleLine: Empty, SortIncludes: Never}
+    */
+
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: Chromium, IndentWidth: 4, AccessModifierOffset: -2, IndentCaseLabels: false, NamespaceIndentation: All, ObjCBlockIndentWidth: 4, ColumnLimit: 120, AllowShortFunctionsOnASingleLine: Empty, SortIncludes: Never}",
+    "C_Cpp.clang_format_fallbackStyle": "Microsoft",
+
+    // [====] [Python] [====]
+    // Python
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+    // Jupyter-Notebook
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+
+    // [====] [CSharp] [====]
+    "csharp.inlayHints.parameters.enabled": true,
+
+    // [====] [Dart] [====]
+    // Dart
+    "dart.flutterSdkPath": "/Users/choidygks/flutter",
+    "dart.flutterRunAdditionalArgs": ["--no-sound-null-safety"],
+    "dart.flutterCreateOffline": true,
+    "dart.showInspectorNotificationsForWidgetErrors": false,
+    "dart.previewFlutterUiGuides": true,
+
+    // [====] [Web] [====]
+    // JS/TS
+    "js/ts.implicitProjectConfig.checkJs": true,
+
+    // Svelte
+    "svelte.enable-ts-plugin": true,
+
+    // Prettier
+    "prettier.tabWidth": 4,
+
+    // [============] [ Other EXTENSIONS] [============]
+    // Code-Runner
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && clang $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python3 -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+
+    // Live-Server
+    "liveServer.settings.CustomBrowser": "firefox",
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    // Github-Copilot
+    "github.copilot.enable": {
+        "*": false
+    },
+    "github.copilot.inlineSuggest.enable": true,
+
+    // Hex-Editor
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+
+    // Discord
+    "discord.removeDetails": true,
+    "discord.removeLowerDetails": true,
+    "discord.removeRemoteRepository": true,
+
+    // Vim
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vscode/code.vimrc",
+    "vim.useSystemClipboard": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false
+}
