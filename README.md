@@ -1,5 +1,5 @@
 <div align="center"> 
-  <h1>YonnsDev</h1>
+  <h1>Yonns</h1>
   
   [![About Me](https://img.shields.io/badge/-ABOUT%20ME-blue?style=for-the-badge)](#About-Me)
   [![Languages & Tools](https://img.shields.io/badge/-LANGUAGES%20&%20TOOLS-green?style=for-the-badge)](#languages--tools)
@@ -37,7 +37,8 @@
 
 ### Studying
 - [C++](#Languages--Tools)
-- [Raylib](https://www.raylib.com/)
+- [JavaScript](https://www.javascript.com)
+- [Three.js](https://threejs.org)
 
 <!-- [=========================================== Awards ===========================================] -->
 
