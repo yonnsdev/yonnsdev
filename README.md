@@ -29,7 +29,6 @@
 ### Languages
 - [C](#Languages--Tools)
 - [Python](https://www.python.org/)
-- [Dart](https://dart.dev/)
 
 ### Studying
 - [C++](#Languages--Tools)
