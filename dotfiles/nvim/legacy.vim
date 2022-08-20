@@ -74,6 +74,10 @@ set smartindent
 " Mouse support
 set mouse=a
 
+" Tab amount
+set tabstop=4
+set shiftwidth=4
+
 " No hidden buffers
 set hidden&
 
