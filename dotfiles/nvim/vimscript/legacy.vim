@@ -14,6 +14,11 @@ imap <c-c> <esc>
 vmap <c-c> <esc>
 omap <c-c> <esc>
 
+" Set copy and paste to use clipboard
+noremap y "+y
+noremap c "+c
+noremap p "+p
+
 " Remap exit terminal to C-t
 tmap <C-t> <C-\><C-n>
 
