@@ -31,35 +31,6 @@ for _, lsp in pairs(servers) do
 end
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
--- local function clangdFlags()
---     opsys = vim.loop.os_uname().sysname
---     if (opsys == "Linux") then
---         return {
---             "clangd",
---             "--background-index",
---             "--pch-storage=memory",
---             "--clang-tidy",
---             "--all-scopes-completion",
---             "--pretty",
---             "--header-insertion=never",
---             "--header-insertion-decorators",
---             "-j=4",
---         }
---     else
---         return {
---             "clangd",
---             "--background-index",
---             "--pch-storage=memory",
---             "--clang-tidy",
---             "--all-scopes-completion",
---             "--pretty",
---             "--header-insertion=never",
---             "--header-insertion-decorators",
---             "-j=4",
---         }
---     end
--- end
-
 require('lspconfig').clangd.setup {
     on_attach = on_attach,
     cmd = {
