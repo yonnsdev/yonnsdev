@@ -25,3 +25,6 @@ nnoremap <leader>tt :NERDTreeToggle<cr>
 nnoremap <leader>tf :NERDTreeFocus <bar> NERDTreeRefreshRoot<cr>
 nnoremap <leader>tr :NERDTreeRefreshRoot<cr>
 let NERDTreeMapOpenInTab='<Nop>'
+
+" ===================== Vimux =======================
+nnoremap <leader>mx :VimuxOpenRunner<cr>

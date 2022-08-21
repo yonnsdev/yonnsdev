@@ -30,13 +30,10 @@ return require('packer').startup(
         use 'tpope/vim-fugitive'
         use 'preservim/nerdtree'
         use 'preservim/tagbar'
-	use 'preservim/vimux'
+        use 'preservim/vimux'
+        use 'nvim-treesitter/nvim-treesitter'
         use 'sbdchd/neoformat'
-        use 'easymotion/vim-easymotion'
-        use {
-            'neoclide/coc.nvim',
-            branch = 'release'
-        }
+        use 'windwp/nvim-autopairs'
         use { -- Using instead of fzf
             'nvim-telescope/telescope.nvim',
             branch = '0.1.x',
@@ -45,6 +42,19 @@ return require('packer').startup(
         use {
             'nvim-lualine/lualine.nvim',
         }
+
+        -- LSP
+        use 'neovim/nvim-lspconfig'
+        use 'ray-x/lsp_signature.nvim'
+        -- CMP
+        use 'hrsh7th/cmp-nvim-lsp'
+        use 'hrsh7th/cmp-buffer'
+        use 'hrsh7th/cmp-path'
+        use 'hrsh7th/cmp-cmdline'
+        use 'hrsh7th/nvim-cmp'
+
+        -- SNIP
+        use 'hrsh7th/vim-vsnip'
 
         -- Additional Languages
         use 'Shirk/vim-gas' -- asm
