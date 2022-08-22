@@ -46,3 +46,4 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install llvm
 	# pyright
 	npm i -g pyright
+fi
