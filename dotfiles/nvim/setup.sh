@@ -28,7 +28,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	sudo apt-get install -y clangd-12
 	sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 	# pyright
-	npm i -g pyright
+	sudo npm i -g pyright
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	# using homebrew
