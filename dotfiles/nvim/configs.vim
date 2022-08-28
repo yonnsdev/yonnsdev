@@ -2,6 +2,7 @@
 
 " ====================    FZF    ====================
 let g:fzf_history_dir = '~/.local/share/fzf-history'
+let $FZF_DEFAULT_OPTS="--bind \"ctrl-j:preview-down,ctrl-k:preview-up\""
 nmap <leader>ff :Files<cr>
 nmap <leader>fl :BLines<cr>
 nmap <leader>ft :BTags<cr>

@@ -8,7 +8,7 @@ if mytheme == "gruvbox"
     let g:gruvbox_contrast_light='hard'
     colorscheme gruvbox
 elseif mytheme == "github"
-    let g:github_sidebars = ["qf", "vista_kind", "terminal", "packer"]
+    let g:github_sidebars = ["terminal", "packer"]
     let g:github_colors = {
     \ 'hint': 'orange',
     \ 'error': '#ff0000'
@@ -42,7 +42,7 @@ syntax on
 filetype plugin indent on
 
 " Position in code
-set number relativenumber
+set number "relativenumber
 set cul
 set ruler
 hi clear CursorLine
@@ -102,14 +102,8 @@ set hidden&
 set nobackup
 set nowritebackup
 
-
 set updatetime=100
 set signcolumn=yes
-
-" Customize Pmenu (Popup menu)
-set pumheight=15
-hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
-hi PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
 
 " Customize VertSplit
 hi VertSplit cterm=NONE, ctermfg=245, gui=NONE
