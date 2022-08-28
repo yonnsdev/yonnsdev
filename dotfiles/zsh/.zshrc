@@ -28,10 +28,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 export ZSH="/Users/choidygks/.oh-my-zsh"
 
 
-# Colors
-ZSH_THEME="geoffgarside"
-
-
 # oh-my-zsh plugins
 plugins=(
   git
@@ -50,6 +46,20 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 zstyle ':completion:*' list-colors
 
 
+# theme: geoffgarside edited
+
+# Enable/Disable Display Time
+DISPLAY_TIME="true"
+if [[ "$DISPLAY_TIME" == "true" ]] then
+	PROMPT='[%*] %{$fg[cyan]%}%n%{$reset_color%}:%{$fg[green]%}%c%{$reset_color%}$(git_prompt_info) %(!.#.$) '
+else
+	PROMPT='%{$fg[cyan]%}%n%{$reset_color%}:%{$fg[green]%}%c%{$reset_color%}$(git_prompt_info) %(!.#.$) '
+fi
+
+export ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[yellow]%}git:("
+export ZSH_THEME_GIT_PROMPT_SUFFIX=")%{$reset_color%}"
+
+
 # Tmux Manage Session -> Open session on start (If not vscode internal terminal)
 if [[ "$TERM_PROGRAM" != "vscode" ]]; then
 
@@ -57,5 +67,7 @@ if [[ "$TERM_PROGRAM" != "vscode" ]]; then
 tmux list-sessions -F '#{session_attached} #{session_id}' | awk '/^0/{print $2}' | xargs -n 1 tmux kill-session -t
 # -> new session
 if [ "$TMUX" = "" ]; then tmux; fi
+clear
 
 fi
+

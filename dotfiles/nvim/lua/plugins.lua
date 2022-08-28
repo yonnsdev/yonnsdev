@@ -22,6 +22,7 @@ return require('packer').startup(
 
         -- Themes & Color
         use 'morhetz/gruvbox'
+        use 'projekt0n/github-nvim-theme'
 
         -- Editor Features
         use 'tpope/vim-surround'
@@ -34,11 +35,8 @@ return require('packer').startup(
         use 'nvim-treesitter/nvim-treesitter'
         use 'sbdchd/neoformat'
         use 'windwp/nvim-autopairs'
-        use { -- Using instead of fzf
-            'nvim-telescope/telescope.nvim',
-            branch = '0.1.x',
-            requires = { { 'nvim-lua/plenary.nvim' } }
-        }
+        use 'junegunn/fzf'
+        use 'junegunn/fzf.vim'
         use {
             'nvim-lualine/lualine.nvim',
         }
@@ -58,6 +56,7 @@ return require('packer').startup(
 
         -- Additional Languages
         use 'Shirk/vim-gas' -- asm
+        use 'rust-lang/rust.vim' -- rust
 
         -- End of packer
         if packer_bootstrap then

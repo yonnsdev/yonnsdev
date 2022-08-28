@@ -18,6 +18,12 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	# install tmux
 	sudo apt-get install -y tmux
 
+	# install fzf
+	sudo apt-get install -y fzf
+
+	# install ctags
+	sudo apt-get install -y ctags
+
 	# install node & npm
 	sudo apt-get install -y curl
 	curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
@@ -37,6 +43,12 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 
 	# install tmux
 	brew install tmux
+
+	# install fzf
+	brew install fzf
+
+	# install ctags
+	brew install ctags
 	
 	# install node & npm
 	brew install node

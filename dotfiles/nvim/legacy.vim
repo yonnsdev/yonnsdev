@@ -1,12 +1,23 @@
 " Colorscheme
 set termguicolors
-let g:gruvbox_sign_column = 'bg0'
-let g:gruvbox_contrast_dark='medium'
-let g:gruvbox_contrast_light='hard'
-colorscheme gruvbox
+let mytheme = "github"
+
+if mytheme == "gruvbox"
+    let g:gruvbox_sign_column = 'bg0'
+    let g:gruvbox_contrast_dark='medium'
+    let g:gruvbox_contrast_light='hard'
+    colorscheme gruvbox
+elseif mytheme == "github"
+    let g:github_sidebars = ["qf", "vista_kind", "terminal", "packer"]
+    let g:github_colors = {
+    \ 'hint': 'orange',
+    \ 'error': '#ff0000'
+    \ }
+    colorscheme github_dark_default
+endif
 
 " Disable C-z from job-controlling neovim
-nnoremap <c-z> <nop>
+nmap <c-z> <nop>
 
 " Remap C-c to <esc>
 nmap <c-c> <esc>
@@ -15,26 +26,27 @@ vmap <c-c> <esc>
 omap <c-c> <esc>
 
 " Set copy and paste to use clipboard
-noremap y "+y
-noremap c "+c
-noremap p "+p
+map y "+y
+map c "+c
+map p "+p
 
 " Remap exit terminal to C-t
 tmap <C-t> <C-\><C-n>
 
 " Move Line Up/Down
-nnoremap <silent>mj :m +1<cr> 
-nnoremap <silent>mk :m -2<cr>
+nmap <silent>mj :m +1<cr> 
+nmap <silent>mk :m -2<cr>
 
 " Syntax highlighting
 syntax on
+filetype plugin indent on
 
 " Position in code
 set number relativenumber
 set cul
 set ruler
-highlight clear CursorLine
-highlight cursorlinenr guifg=bold
+hi clear CursorLine
+hi cursorlinenr guifg=bold
 
 " Line wrap
 set wrap
@@ -100,4 +112,4 @@ hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
 
 " Customize VertSplit
-highlight VertSplit cterm=NONE, ctermfg=245, gui=NONE
+hi VertSplit cterm=NONE, ctermfg=245, gui=NONE
