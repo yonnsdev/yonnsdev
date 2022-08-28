@@ -107,3 +107,9 @@ set signcolumn=yes
 
 " Customize VertSplit
 hi VertSplit cterm=NONE, ctermfg=245, gui=NONE
+
+" Customize Pmenu (Popup menu)
+set pumheight=15
+hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
+hi PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
+

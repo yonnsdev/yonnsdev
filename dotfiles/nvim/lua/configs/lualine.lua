@@ -1,9 +1,21 @@
+CmpSep = {}
+SecSep = {}
+
+if vim.loop.os_uname().sysname == "Darwin" then
+    CmpSep = { left = '', right = '' }
+    SecSep = { left = '', right = '' }
+else
+    CmpSep = { left = '>', right = '<' }
+    SecSep = { left = '', right = '' }
+end
+
 require('lualine').setup({
     options = {
         icons_enabled = false,
         theme = 'auto',
-        component_separators = { left = '', right = '' },
-        section_separators = { left = '', right = '' },
+        component_separators = CmpSep,
+        section_separators = SecSep,
+
         disabled_filetypes = {
             statusline = {},
             winbar = {},

@@ -22,7 +22,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	sudo apt-get install -y fzf
 
 	# install ctags
-	sudo apt-get install -y ctags
+	sudo apt-get install -y universal-ctags
 
 	# install node & npm
 	sudo apt-get install -y curl
