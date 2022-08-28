@@ -3,6 +3,10 @@
 " ====================    FZF    ====================
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 nmap <leader>ff :Files<cr>
+nmap <leader>fl :BLines<cr>
+nmap <leader>ft :BTags<cr>
+nmap <leader>fg :GFiles?<cr>
+nmap <leader>fc :Commits<cr>
 
 " ==================== Neoformat ====================
 augroup fmt
@@ -31,8 +35,8 @@ nmap <leader>tr :NERDTreeRefreshRoot<cr>
 let NERDTreeMapOpenInTab='<Nop>'
 
 " ====================  Vimux   =====================
-nmap <leader>mx :VimuxOpenRunner<cr>
-nmap <leader>mc :VimuxCloseRunner<cr>
+let myvimux = 0 
+nmap <expr> <leader>mx myvimux==0 ? ':VimuxOpenRunner <bar> let myvimux=1<cr>' : ':VimuxCloseRunner <bar> let myvimux=0<cr>'
 autocmd VimLeave * :VimuxCloseRunner
 
 " ====================  Tagbar  =====================

@@ -29,6 +29,9 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 	sudo apt-get install -y nodejs
 
+	# install font-fira-code
+	sudo apt-get install -y fonts-firacode
+
 	# install language servers
 	# clangd
 	sudo apt-get install -y clangd-12
@@ -52,6 +55,9 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	
 	# install node & npm
 	brew install node
+
+	# install font-fira-code
+	brew install --cask font-fira-code
 
 	# install language servers
 	# clangd
