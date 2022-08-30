@@ -5,8 +5,8 @@
 mkdir ~/.config/nvim
 
 # copy config files
-cp -R ../nvim/* ~/.config/nvim/
-cp ../tmux/.tmux.conf ~/
+cp -R ./nvim/* ~/.config/nvim/
+cp ./tmux/.tmux.conf ~/
 
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then

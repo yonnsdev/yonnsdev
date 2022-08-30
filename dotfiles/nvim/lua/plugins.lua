@@ -35,11 +35,13 @@ return require('packer').startup(
         use 'nvim-treesitter/nvim-treesitter'
         use 'sbdchd/neoformat'
         use 'windwp/nvim-autopairs'
-        use 'junegunn/fzf'
-        use 'junegunn/fzf.vim'
         use {
             'nvim-lualine/lualine.nvim',
         }
+
+        -- FZF
+        use 'junegunn/fzf'
+        use 'junegunn/fzf.vim'
 
         -- LSP
         use 'neovim/nvim-lspconfig'

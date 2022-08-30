@@ -1,11 +1,12 @@
-# ALIASES
-alias vim=nvim
-
-
 # move zshcompdump to another dir
 autoload -Uz compinit
 compinit -d ~/.config/zsh/.zcompdump
 ZSH_COMPDUMP="${HOME}/.config/zsh/.zcompdump"
+
+
+# fzf
+alias fzd="find . -type d -print | fzf" 
+export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
 
 
 # ruby
@@ -49,7 +50,7 @@ zstyle ':completion:*' list-colors
 # theme: geoffgarside edited
 
 # Enable/Disable Display Time
-DISPLAY_TIME="true"
+DISPLAY_TIME="false"
 if [[ "$DISPLAY_TIME" == "true" ]] then
 	PROMPT='[%*] %{$fg[cyan]%}%n%{$reset_color%}:%{$fg[green]%}%c%{$reset_color%}$(git_prompt_info) %(!.#.$) '
 else
