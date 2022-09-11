@@ -28,10 +28,11 @@
 
 ### Languages
 - [C](#Languages--Tools)
+- [C++](#Languages--Tools)
 - [Python](https://www.python.org/)
 
 ### Studying
-- [C++](#Languages--Tools)
+- [Rust](https://www.rust-lang.org)
 - [JavaScript](https://www.javascript.com)
 
 <!-- [=========================================== Awards ===========================================] -->
