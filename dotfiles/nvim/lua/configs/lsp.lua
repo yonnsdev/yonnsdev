@@ -5,7 +5,7 @@ lsp_signature_cfg = {
     hint_scheme = "String",
     bind = true, -- This is mandatory, otherwise border config won't get registered.
     handler_opts = {
-        border = "none" -- double, rounded, single, shadow, none
+        border = "rounded" -- double, rounded, single, shadow, none
     },
     floating_window = true,
     doc_lines = 0,
@@ -53,3 +53,16 @@ require('lspconfig').pyright.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
+
+
+
+-- Show line diagnostics automatically in hover window
+vim.diagnostic.config({
+    virtual_text = false
+})
+vim.o.updatetime = 250
+
+-- scope = "line"/"cursor"
+-- "line": shows on line hover
+-- "cursor": shows when cursor is above error
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float({ border="rounded", scope="line"}, nil, {focus=false})]]

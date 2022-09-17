@@ -1,12 +1,6 @@
-# move zshcompdump to another dir
-autoload -Uz compinit
-compinit -d ~/.config/zsh/.zcompdump
-ZSH_COMPDUMP="${HOME}/.config/zsh/.zcompdump"
-
-
-# fzf
-alias fzd="find . -type d -print | fzf" 
-export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
+# rust & cargo
+export PATH="~/.cargo/bin:$PATH"
+source "$HOME/.cargo/env"
 
 
 # ruby
@@ -20,13 +14,37 @@ export PATH="/opt/homebrew/opt/python@3.10/bin:$PATH"
 
 
 # llvm
-export PATH="/opt/homebrew/Cellar/llvm/14.0.6_1/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
 
+# flutter
+export PATH="$HOME/.flutter/bin:$PATH"
+
+
+# fzf
+alias fzd="find . -type d -print | fzf"
+export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
+
+
+# ===================================================================== #
+# move zshcompdump to another dir
+autoload -Uz compinit
+compinit -d ~/.config/zsh/.zcompdump
+ZSH_COMPDUMP="${HOME}/.config/zsh/.zcompdump"
+
+
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/choidygks/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+
+
+# theme
+ZSH_THEME=custom-geoffgarside
+
+# zsh-autosuggest config
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 
 # oh-my-zsh plugins
@@ -38,27 +56,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 
-# zsh-autosuggest config
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
-export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
-
 # style
 zstyle ':completion:*' list-colors
-
-
-# theme: geoffgarside edited
-
-# Enable/Disable Display Time
-DISPLAY_TIME="false"
-if [[ "$DISPLAY_TIME" == "true" ]] then
-	PROMPT='[%*] %{$fg[cyan]%}%n%{$reset_color%}:%{$fg[green]%}%c%{$reset_color%}$(git_prompt_info) %(!.#.$) '
-else
-	PROMPT='%{$fg[cyan]%}%n%{$reset_color%}:%{$fg[green]%}%c%{$reset_color%}$(git_prompt_info) %(!.#.$) '
-fi
-
-export ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[yellow]%}git:("
-export ZSH_THEME_GIT_PROMPT_SUFFIX=")%{$reset_color%}"
 
 
 # Tmux Manage Session -> Open session on start (If not vscode internal terminal)

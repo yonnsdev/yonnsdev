@@ -26,9 +26,7 @@ vmap <c-c> <esc>
 omap <c-c> <esc>
 
 " Set copy and paste to use clipboard
-map y "+y
-map c "+c
-map p "+p
+set clipboard+=unnamedplus
 
 " Remap exit terminal to C-t
 tmap <C-t> <C-\><C-n>
@@ -56,6 +54,17 @@ set visualbell
 
 " Default file encoding
 set encoding=utf-8
+
+" Format options
+"  t       Auto-wrap text using textwidth
+"  c       Auto-wrap comments using textwidth, inserting the current comment
+"          leader automatically.
+"  r       Automatically insert the current comment leader after hitting
+"          <Enter> in Insert mode.
+"  o       Automatically insert the current comment leader after hitting 'o' or
+"          'O' in Normal mode.
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+set nowrap
 
 " Function to set tab width to n spaces
 function! SetTab(n)

@@ -17,12 +17,13 @@ augroup END
   
 let g:neoformat_c_clangformat = {
     \ 'exe': 'clang-format',
-    \ 'args': ['--style="{BasedOnStyle: Chromium, IndentWidth: 4, AccessModifierOffset: -2, IndentCaseLabels: false, NamespaceIndentation: All, ObjCBlockIndentWidth: 4, ColumnLimit: 0, AllowShortFunctionsOnASingleLine: Empty, SortIncludes: Never, AlignArrayOfStructures: Right, ReflowComments: false, ColumnLimit: 120, PointerAlignment: Right}"'],
+    \ 'args': ['-style="{BasedOnStyle: Chromium, IndentWidth: 4, AccessModifierOffset: -2, IndentCaseLabels: false, NamespaceIndentation: All, ObjCBlockIndentWidth: 4, ColumnLimit: 0, AllowShortFunctionsOnASingleLine: Empty, SortIncludes: Never, AlignArrayOfStructures: Right, ReflowComments: false, ColumnLimit: 120, PointerAlignment: Right}"'],
     \ }
 let g:neoformat_cpp_clangformat = {
     \ 'exe': 'clang-format',
-    \ 'args': ['--style="{BasedOnStyle: Chromium, IndentWidth: 4, AccessModifierOffset: -2, IndentCaseLabels: false, NamespaceIndentation: All, ObjCBlockIndentWidth: 4, ColumnLimit: 0, AllowShortFunctionsOnASingleLine: Empty, SortIncludes: Never, AlignArrayOfStructures: Right, ReflowComments: false, ColumnLimit: 120, PointerAlignment: Right}'],
+    \ 'args': ['-style="{BasedOnStyle: Chromium, IndentWidth: 4, AccessModifierOffset: -2, IndentCaseLabels: false, NamespaceIndentation: All, ObjCBlockIndentWidth: 4, ColumnLimit: 0, AllowShortFunctionsOnASingleLine: Empty, SortIncludes: Never, AlignArrayOfStructures: Right, ReflowComments: false, ColumnLimit: 120, PointerAlignment: Right}"'],
     \ }
+
 let g:neoformat_enabled_python = ['autopep4']
 let g:neoformat_enabled_c = ['clangformat']
 let g:neoformat_enabled_cpp = ['clangformat']
@@ -35,8 +36,8 @@ nmap <leader>tr :NERDTreeRefreshRoot<cr>
 let NERDTreeMapOpenInTab='<Nop>'
 
 " ====================  Vimux   =====================
-let myvimux = 0 
-nmap <expr> <leader>mx myvimux==0 ? ':VimuxOpenRunner <bar> let myvimux=1<cr>' : ':VimuxCloseRunner <bar> let myvimux=0<cr>'
+let myvimux=0 
+nmap <expr> <leader>mx myvimux==0 ? ':VimuxOpenRunner <bar> let myvimux=1<cr>' : ':VimuxTogglePane<cr>'
 autocmd VimLeave * :VimuxCloseRunner
 
 " ====================  Tagbar  =====================
